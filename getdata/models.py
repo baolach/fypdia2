@@ -36,8 +36,6 @@ class GetLocation(models.Model):
         return self.type
 
 
-
-
 class GetExpense(models.Model):
     expense_name = models.TextField(default=None,)
     expense_amount = models.CharField(default=None, max_length=6)

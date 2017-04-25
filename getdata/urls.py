@@ -6,9 +6,9 @@ from . import views
 # http://localhost:8000/clients/   works
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    # url(r'^clients/', views.ClientList.as_view()),  # returns list of clients
-    # url(r'^lessons/', views.LessonList.as_view()),  # returns list of lessons
-    # url(r'^locations/', views.LocationList.as_view()),  # returns list of locations
-    # url(r'^users/', views.UserList.as_view()),  # returns list of locations
+    url(r'^clients/', views.ClientList.as_view()),  # returns list of clients
+    url(r'^lessons/', views.LessonList.as_view()),  # returns list of lessons
+    url(r'^locations/', views.LocationList.as_view()),  # returns list of locations
+    url(r'^users/', views.UserList.as_view()),  # returns list of locations
 
 ]

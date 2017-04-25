@@ -18,7 +18,6 @@ from django.contrib import admin
 from getdata import views    # need this from the views.py
 from django.contrib.auth import views as auth_views
 from rest_framework.urlpatterns import format_suffix_patterns
-import accounts.views
 
 
 

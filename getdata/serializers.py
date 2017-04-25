@@ -30,8 +30,8 @@ class LocationSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = GetLocation
-        fields = ('id', 'type', 'coordinates','x', 'y')
-        #fields = '__all__'
+        #fields = ('id', 'location_type', 'location_detail','x', 'y')
+        fields = '__all__'
 
 
 class ExpenseSerializer(serializers.ModelSerializer):
@@ -46,6 +46,5 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = GetUser
-        #fields = ('id', 'type', 'coordinates','x', 'y')
         fields = '__all__'
 

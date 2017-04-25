@@ -21,17 +21,6 @@ from rest_framework import status
 
 
 
-
-from django.shortcuts import render
-from django.contrib.auth.models import User
-def signup(request):
-    if request.method == 'POST':
-        User.objects.create_user('jon', 'lennon@thebeatles.com', 'johnpassword')
-        return render(request, 'accounts/signup.html')
-    else:
-        return render(request, 'accounts/signup.html')
-
-
 # Create your views here.
 def index(request):
     all_entries = GetClient.objects.all()
